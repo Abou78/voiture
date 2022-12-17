@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block monTitre %}Inscription{% endblock %}
+
+{% block body %}
+
+    {{ form_start(registrationForm) }}
+    {{ form_widget(registrationForm) }}
+
+        <button type="submit" class="btn btn-primary">Valider</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}
